@@ -93,6 +93,9 @@ For the full information about this chatbot refer to this blog: https://omega1.h
 **Providing detailed feedback to the user**
 ![Screenshot from 2024-01-15 01-28-38](https://github.com/Vikash-8090-Yadav/Minds/assets/85225156/4b002d43-476d-4288-9522-53d2a2e15385)
 
+## Demonstration Video: 
+https://youtu.be/pl7VgiEMZRY
+
 ## Special Thanks 🔥
 
 I'm truly happy about the partnership between Hashnode and MindsDB that made up this amazing hackathon. Their great services and wholesome support are appreciatable. 🍺
