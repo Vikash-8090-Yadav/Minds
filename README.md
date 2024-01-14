@@ -1,5 +1,7 @@
 # This  project is made under MINDSDB X HASHNODE HACKATHON
 
+<br>
+
 ![Presenting Minds! - Your Path to Acing Technical Interviews!](https://github.com/Vikash-8090-Yadav/Minds/assets/85225156/cffab8eb-b1e5-4dcb-9e80-11e3312e06c0)
 
 ## All About Mindsdb
@@ -76,11 +78,13 @@ User: code snippet
 Bot: Debugging your solution...
 ```
 
+Note: The dataset used in this chatbot code is taken from Kaggle : https://www.kaggle.com/datasets/gzipchrist/leetcode-problem-dataset
 ## How to run this Chatbot ?
 
 1.  Run the Mindsdb platform via Docker or Locally.
 2.  Copy and paste the code present in the Main.txt
 
+For the full information about this chatbot refer to this blog: https://omega1.hashnode.dev/presenting-minds-your-path-to-acing-technical-interviews
 ## Sample works of Minds CHatbot
 
 **Interacting with the user **
