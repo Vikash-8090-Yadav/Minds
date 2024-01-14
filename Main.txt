@@ -1,0 +1,40 @@
+CREATE ML_ENGINE langchain_engine
+FROM langchain;
+
+
+CREATE MODEL demo_model
+PREDICT answers USING
+    engine = "langchain_engine",
+    input_column = "question",
+    api_key = "sk-",
+    mode = "conversational",
+    user_column = "question",
+    assistant_column = "answer",
+    model_name = "gpt-4",
+    verbose = True,
+    prompt_template = "Answer the user input in a helpful way";
+
+CREATE SKILL query_skill USING
+    type = "text_to_sql",
+    file = "files",
+    tables = ["leetcode"],
+    description = "Question and Answer in Farmer Call Center Bot";
+
+CREATE agent demo_agent USING
+    model= "demo_model",
+    skills= ["query_skill"];
+
+SELECT *FROM agents;
+
+
+
+CREATE DATABASE mindsdb_slack 
+WITH 
+    ENGINE = 'slack', 
+    PARAMETERS = { 
+        "token": "" 
+    };
+
+CREATE CHATBOT demo_chatbot USING 
+    database = 'slack_db.mindsdb_slack',
+    agent  = 'demo_agent';
